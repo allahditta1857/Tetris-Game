@@ -1,22 +1,21 @@
-# Tetris Game
+# Education Hub
 
-This repository contains an official C++ implementation of the classic Tetris game developed by Allah Ditta, from Namal University, Mianwali.
+Education Hub is a professional educational landing page designed to provide students with quick access to academic resources, learning materials, and digital libraries across multiple disciplines. The website organizes content into subject-based sections such as Sciences, Arts, English, Computer, Math, Languages, Urdu, Chemistry, Physics, and Digital Libraries.
 
 ## Project Overview
-The project includes core gameplay mechanics such as:
-- falling tetromino pieces
-- left/right movement
-- rotation
-- collision detection
-- score tracking
-- game-over handling
-- save and resume functionality
+This project was developed to support academic learning and resource discovery in an organized and user-friendly format. It includes:
+
+- subject-specific learning sections
+- links to educational and digital libraries
+- references to trusted academic websites
+- a clean and responsive layout for easy browsing
 
 ## Author
 Allah Ditta  
 Namal University, Mianwali
 
 ## Copyright
-© 2026 Allah Ditta. All rights reserved.
+© 2025 Allah Ditta. All rights reserved.
 
-This project is developed for academic and personal portfolio purposes.
+## Purpose
+The purpose of this project is to provide a simple educational web portal that helps students explore learning resources efficiently and conveniently.

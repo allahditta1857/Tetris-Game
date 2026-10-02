@@ -1,0 +1,388 @@
+<!--
+    Project: Education Hub
+    Author: Allah Ditta
+    Institution: Namal University, Mianwali
+    Copyright: © 2025 Allah Ditta
+    All rights reserved.
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Education Hub</title>
+    <style>
+        :root {
+            --bg: #f4f4f4;
+            --nav: #1f2937;
+            --card: #ffffff;
+            --text: #1f2937;
+            --muted: #4b5563;
+            --accent: #2563eb;
+            --accent-dark: #1d4ed8;
+            --footer: #111827;
+            --shadow: rgba(0, 0, 0, 0.08);
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: var(--bg);
+            color: var(--text);
+            line-height: 1.6;
+        }
+
+        .navbar {
+            background: var(--nav);
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+            padding: 12px 20px;
+            position: sticky;
+            top: 0;
+            z-index: 10;
+        }
+
+        .navbar a {
+            color: #ffffff;
+            text-decoration: none;
+            padding: 10px 14px;
+            border-radius: 6px;
+            transition: background 0.2s ease;
+        }
+
+        .navbar a:hover {
+            background: #dbeafe;
+            color: var(--nav);
+        }
+
+        .container {
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 30px 20px 80px 20px;
+        }
+
+        .hero {
+            margin: 20px 0 30px;
+            display: flex;
+            align-items: center;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+
+        .logo-box {
+            width: 120px;
+            height: 120px;
+            border-radius: 16px;
+            background: linear-gradient(135deg, #dbeafe, #93c5fd);
+            display: grid;
+            place-items: center;
+            box-shadow: 0 8px 18px var(--shadow);
+            font-size: 2.2rem;
+            color: var(--nav);
+            font-weight: bold;
+        }
+
+        h1 {
+            margin: 0 0 8px;
+            font-size: 2.1rem;
+            color: var(--text);
+        }
+
+        .subtitle {
+            margin: 0;
+            font-size: 1.05rem;
+            color: var(--muted);
+        }
+
+        .course {
+            background: var(--card);
+            border-radius: 12px;
+            box-shadow: 0 6px 16px var(--shadow);
+            margin: 22px 0;
+            padding: 20px;
+            display: flex;
+            gap: 18px;
+            align-items: flex-start;
+            flex-wrap: wrap;
+        }
+
+        .course-image {
+            width: 110px;
+            height: 110px;
+            border-radius: 12px;
+            background: linear-gradient(135deg, #eff6ff, #bfdbfe);
+            display: grid;
+            place-items: center;
+            font-size: 2rem;
+            font-weight: bold;
+            color: var(--nav);
+            flex-shrink: 0;
+        }
+
+        .course-content {
+            flex: 1;
+            min-width: 250px;
+        }
+
+        .course-content h3 {
+            margin: 0 0 8px;
+            color: var(--text);
+            font-size: 1.7rem;
+        }
+
+        .course-content p {
+            margin: 0 0 12px;
+            color: var(--muted);
+        }
+
+        ul {
+            margin: 0;
+            padding-left: 20px;
+        }
+
+        li {
+            margin: 6px 0;
+        }
+
+        a {
+            color: var(--accent);
+            text-decoration: none;
+        }
+
+        a:hover {
+            color: var(--accent-dark);
+            text-decoration: underline;
+        }
+
+        .footer {
+            background: var(--footer);
+            color: #ffffff;
+            text-align: center;
+            padding: 18px 12px;
+            position: fixed;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            font-size: 0.95rem;
+        }
+
+        @media (max-width: 720px) {
+            .navbar {
+                justify-content: center;
+            }
+
+            .course {
+                padding: 16px;
+            }
+
+            .course-image {
+                width: 90px;
+                height: 90px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <a href="#sciences">Sciences</a>
+        <a href="#arts">Arts</a>
+        <a href="#english">English</a>
+        <a href="#computer">Computer</a>
+        <a href="#math">Math</a>
+        <a href="#languages">Languages</a>
+        <a href="#urdu">Urdu</a>
+        <a href="#chemistry">Chemistry</a>
+        <a href="#physics">Physics</a>
+        <a href="#libraries">Digital Libraries</a>
+    </nav>
+
+    <main class="container">
+        <section class="hero">
+            <div class="logo-box">E</div>
+            <div>
+                <h1>Welcome to Education Hub</h1>
+                <p class="subtitle">Your gateway to academic knowledge, digital libraries, and learning resources.</p>
+            </div>
+        </section>
+
+        <section id="sciences" class="course">
+            <div class="course-image">Sci</div>
+            <div class="course-content">
+                <h3>Sciences</h3>
+                <p>Explore subjects such as Physics, Chemistry, Biology, and the broader scientific disciplines.</p>
+                <ul>
+                    <li><a href="http://www.digitallibrary.edu.pk/" target="_blank">HEC Digital Library</a></li>
+                    <li><a href="https://www.nlm.nih.gov/" target="_blank">National Library of Medicine</a></li>
+                </ul>
+            </div>
+        </section>
+
+        <section id="arts" class="course">
+            <div class="course-image">Arts</div>
+            <div class="course-content">
+                <h3>Arts</h3>
+                <p>Discover courses and resources in History, Literature, Music, Visual Arts, and cultural studies.</p>
+                <ul>
+                    <li><a href="http://www.digitallibrary.edu.pk/" target="_blank">HEC Digital Library</a></li>
+                    <li><a href="https://www.vam.ac.uk/info/national-art-library" target="_blank">National Art Library</a></li>
+                </ul>
+            </div>
+        </section>
+
+        <section id="english" class="course">
+            <div class="course-image">Eng</div>
+            <div class="course-content">
+                <h3>English</h3>
+                <p>Enhance your communication, writing, vocabulary, and literature skills through quality online resources.</p>
+                <ul>
+                    <li><a href="http://www.digitallibrary.edu.pk/" target="_blank">HEC Digital Library</a></li>
+                    <li><a href="https://www.coursera.org/browse/language-learning/learning-english" target="_blank">Coursera - Learning English</a></li>
+                    <li><a href="https://learnenglish.britishcouncil.org/" target="_blank">British Council - LearnEnglish</a></li>
+                    <li><a href="https://openlibrary.org/" target="_blank">Open Library</a></li>
+                    <li><a href="https://www.britishcouncil.pk/library/digital-library" target="_blank">British Council Digital Library</a></li>
+                </ul>
+            </div>
+        </section>
+
+        <section id="computer" class="course">
+            <div class="course-image">Comp</div>
+            <div class="course-content">
+                <h3>Computer</h3>
+                <p>Build practical skills in programming, web development, software knowledge, and digital technology.</p>
+                <ul>
+                    <li><a href="http://www.digitallibrary.edu.pk/" target="_blank">HEC Digital Library</a></li>
+                    <li><a href="https://www.czone.com.pk/" target="_blank">Computer Zone Pakistan</a></li>
+                    <li><a href="https://www.w3schools.com/" target="_blank">W3Schools</a></li>
+                    <li><a href="https://www.tutorialspoint.com/" target="_blank">TutorialsPoint</a></li>
+                    <li><a href="https://www.codecademy.com/" target="_blank">Codecademy</a></li>
+                    <li><a href="https://www.geeksforgeeks.org/" target="_blank">GeeksforGeeks</a></li>
+                    <li><a href="https://www.coursera.org/" target="_blank">Coursera</a></li>
+                </ul>
+
+                <h4>Top Computer Websites</h4>
+                <ul>
+                    <li><a href="https://www.google.com/" target="_blank">Google</a></li>
+                    <li><a href="https://www.w3schools.com/" target="_blank">W3Schools</a></li>
+                    <li><a href="https://www.geeksforgeeks.org/" target="_blank">GeeksforGeeks</a></li>
+                    <li><a href="https://www.codecademy.com/" target="_blank">Codecademy</a></li>
+                    <li><a href="https://www.tutorialspoint.com/" target="_blank">TutorialsPoint</a></li>
+                    <li><a href="https://www.coursera.org/" target="_blank">Coursera</a></li>
+                </ul>
+
+                <h4>Top Computer Schools</h4>
+                <ul>
+                    <li><a href="https://comsats.edu.pk" target="_blank">COMSATS Institute of Information Technology, Islamabad</a></li>
+                    <li><a href="https://nust.edu.pk" target="_blank">National University of Sciences and Technology, Islamabad</a></li>
+                    <li><a href="https://qau.edu.pk" target="_blank">Quaid-I-Azam University, Islamabad</a></li>
+                    <li><a href="https://pu.edu.pk" target="_blank">University of the Punjab, Lahore</a></li>
+                    <li><a href="https://nu.edu.pk" target="_blank">National University of Computer and Emerging Sciences, Islamabad</a></li>
+                    <li><a href="https://itu.edu.pk" target="_blank">Information Technology University, Lahore</a></li>
+                </ul>
+            </div>
+        </section>
+
+        <section id="math" class="course">
+            <div class="course-image">Math</div>
+            <div class="course-content">
+                <h3>Math</h3>
+                <p>Strengthen analytical and problem-solving abilities through lessons in Algebra, Geometry, Calculus, and more.</p>
+                <ul>
+                    <li><a href="http://www.digitallibrary.edu.pk/" target="_blank">HEC Digital Library</a></li>
+                    <li><a href="https://www.mathsisfun.com/" target="_blank">Math is Fun</a></li>
+                    <li><a href="https://www.ixl.com/math" target="_blank">IXL Math</a></li>
+                    <li><a href="https://www.weareteachers.com/best-math-websites/" target="_blank">WeAreTeachers - Best Math Websites</a></li>
+                </ul>
+            </div>
+        </section>
+
+        <section id="languages" class="course">
+            <div class="course-image">Lang</div>
+            <div class="course-content">
+                <h3>Languages</h3>
+                <p>Learn new languages and improve fluency in Spanish, French, Mandarin, and other widely spoken languages.</p>
+                <ul>
+                    <li><a href="http://www.digitallibrary.edu.pk/" target="_blank">HEC Digital Library</a></li>
+                    <li><a href="https://www.loecsen.com/en" target="_blank">Loecsen - Learn Languages</a></li>
+                    <li><a href="https://www.duolingo.com/" target="_blank">Duolingo</a></li>
+                    <li><a href="https://www.busuu.com/" target="_blank">Busuu</a></li>
+                </ul>
+            </div>
+        </section>
+
+        <section id="urdu" class="course">
+            <div class="course-image">Urdu</div>
+            <div class="course-content">
+                <h3>Urdu</h3>
+                <p>Learn and appreciate Urdu through language courses, reading materials, and digital learning platforms.</p>
+                <ul>
+                    <li><a href="https://www.duolingo.com/course/ur/en/Learn-Urdu" target="_blank">Learn Urdu on Duolingo</a></li>
+                    <li><a href="https://uwtsd.ac.uk/" target="_blank">Urdu World Trust Learning Resources</a></li>
+                    <li><a href="https://www.memrise.com/course/764804/learn-urdu/" target="_blank">Learn Urdu on Memrise</a></li>
+                </ul>
+            </div>
+        </section>
+
+        <section id="chemistry" class="course">
+            <div class="course-image">Chem</div>
+            <div class="course-content">
+                <h3>Chemistry</h3>
+                <p>Explore the fundamentals and applications of chemistry with trusted educational and scientific sources.</p>
+                <ul>
+                    <li><a href="https://www.acs.org/content/acs/en/education.html" target="_blank">American Chemical Society (ACS)</a></li>
+                    <li><a href="https://pubs.acs.org/" target="_blank">ACS Publications</a></li>
+                    <li><a href="https://www.rsc.org/" target="_blank">Royal Society of Chemistry (RSC)</a></li>
+                    <li><a href="https://chem.libretexts.org/" target="_blank">Chemistry LibreTexts</a></li>
+                    <li><a href="https://www.chemistryworld.com/" target="_blank">Chemistry World</a></li>
+                    <li><a href="https://www.annualreviews.org/journal/chem" target="_blank">Annual Reviews of Chemistry</a></li>
+                </ul>
+            </div>
+        </section>
+
+        <section id="physics" class="course">
+            <div class="course-image">Phy</div>
+            <div class="course-content">
+                <h3>Physics</h3>
+                <p>Study core principles of physics with accessible resources and scientific archives for deeper understanding.</p>
+                <ul>
+                    <li><a href="https://www.aip.org/" target="_blank">American Institute of Physics (AIP)</a></li>
+                    <li><a href="https://journals.aps.org" target="_blank">American Physical Society (APS)</a></li>
+                    <li><a href="https://phys.org/" target="_blank">Phys.org</a></li>
+                    <li><a href="https://www.physics.org/" target="_blank">Think Physics</a></li>
+                    <li><a href="https://arxiv.org/archive/physics" target="_blank">arXiv Physics Archive</a></li>
+                    <li><a href="https://www.nature.com/subjects/physics" target="_blank">Nature Physics</a></li>
+                </ul>
+            </div>
+        </section>
+
+        <section id="libraries" class="course">
+            <div class="course-image">Lib</div>
+            <div class="course-content">
+                <h3>Digital Libraries</h3>
+                <p>Access a wide range of online libraries for research, reading, and academic development.</p>
+                <ul>
+                    <li><a href="http://www.digitallibrary.edu.pk/" target="_blank">HEC Digital Library</a></li>
+                    <li><a href="https://www.gutenberg.org/" target="_blank">Project Gutenberg</a></li>
+                    <li><a href="https://archive.org/" target="_blank">Internet Archive</a></li>
+                    <li><a href="https://www.jstor.org/" target="_blank">JSTOR</a></li>
+                    <li><a href="https://openlibrary.org/" target="_blank">Open Library</a></li>
+                    <li><a href="https://www.britishcouncil.pk/library/digital-library" target="_blank">British Council Digital Library</a></li>
+                </ul>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <p>&copy; 2025 Education Hub. All rights reserved.</p>
+    </footer>
+</body>
+</html>
